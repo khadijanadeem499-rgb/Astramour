@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroExplore - Planets</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3212/3212608.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Astro<span>Explore</span></a>
+            </div>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="planets.html" class="active">Planets</a></li>
+                <li><a href="facts.html">Facts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Our Solar System</h1>
+        <p>Discover the diverse worlds that orbit our Sun</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Planets</button>
+                <button class="filter-btn" data-filter="terrestrial">Terrestrial</button>
+                <button class="filter-btn" data-filter="gas-giant">Gas Giants</button>
+                <button class="filter-btn" data-filter="ice-giant">Ice Giants</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="container">
+            <div class="cards-container planets-grid">
+                <!-- Mercury -->
+                <div class="card planet-card" data-category="terrestrial">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA15163/PIA15163~medium.jpg" alt="Mercury" loading="lazy">
+                        <div class="planet-badge">Closest to Sun</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mercury</h3>
+                        <p>The smallest planet, closest to the Sun. Temperatures range from -173°C to 427°C.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>4,879 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>59 Earth days</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-173 to 427°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/mercury/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Venus -->
+                <div class="card planet-card" data-category="terrestrial">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~medium.jpg" alt="Venus" loading="lazy">
+                        <div class="planet-badge">Earth's Twin</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Venus</h3>
+                        <p>Earth's twin with a thick toxic atmosphere. Surface hot enough to melt lead.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>12,104 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>243 Earth days</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>464°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Earth -->
+                <div class="card planet-card" data-category="terrestrial">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/iss040e090540/iss040e090540~medium.jpg" alt="Earth" loading="lazy">
+                        <div class="planet-badge">Home Planet</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Earth</h3>
+                        <p>Our home planet - the only known world with life and liquid water.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>12,742 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>24 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>15°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mars -->
+                <div class="card planet-card" id="mars" data-category="terrestrial">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA04304/PIA04304~medium.jpg" alt="Mars" loading="lazy">
+                        <div class="planet-badge">Red Planet</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mars</h3>
+                        <p>The Red Planet - future destination for humans. Evidence of ancient water.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>6,779 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>24.6 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-65°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Jupiter -->
+                <div class="card planet-card" id="jupiter" data-category="gas-giant">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA22946/PIA22946~medium.jpg" alt="Jupiter" loading="lazy">
+                        <div class="planet-badge">Largest Planet</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jupiter</h3>
+                        <p>The largest planet with 79 moons and the Great Red Spot storm.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>139,820 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>9.9 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-110°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Saturn -->
+                <div class="card planet-card" id="saturn" data-category="gas-giant">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA17172/PIA17172~medium.jpg" alt="Saturn" loading="lazy">
+                        <div class="planet-badge">Ringed Beauty</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Saturn</h3>
+                        <p>Famous for its stunning rings made of ice and rock particles.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>116,460 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>10.7 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-140°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/saturn/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Uranus -->
+                <div class="card planet-card" data-category="ice-giant">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA18182/PIA18182~medium.jpg" alt="Uranus" loading="lazy">
+                        <div class="planet-badge">Ice Giant</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Uranus</h3>
+                        <p>The ice giant that rotates on its side with 27 known moons.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>50,724 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>17.2 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-195°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/uranus/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Neptune -->
+                <div class="card planet-card" data-category="ice-giant">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA01492/PIA01492~medium.jpg" alt="Neptune" loading="lazy">
+                        <div class="planet-badge">Windiest Planet</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Neptune</h3>
+                        <p>The windiest planet with supersonic winds reaching 2,100 km/h.</p>
+                        <div class="planet-details">
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>49,244 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>16.1 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>-200°C</span>
+                            </div>
+                        </div>
+                        <a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank" class="btn-small">NASA Info <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AstroExplore</h3>
+                    <p>Your gateway to space exploration and discovery.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="planets.html"><i class="fas fa-chevron-right"></i> Planets</a></li>
+                        <li><a href="facts.html"><i class="fas fa-chevron-right"></i> Facts</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2026</span> AstroExplore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

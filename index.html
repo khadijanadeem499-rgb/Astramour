@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroExplore - Home | Space Discovery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3212/3212608.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Astro<span>Explore</span></a>
+            </div>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/planets.html">Planets</a></li>
+                <li><a href="pages/facts.html">Facts</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text">Explore the Universe</h1>
+            <p>Discover the wonders of space, from distant galaxies to our own solar system</p>
+            <div class="hero-buttons">
+                <a href="pages/planets.html" class="btn">Start Journey <i class="fas fa-rocket"></i></a>
+                <a href="pages/facts.html" class="btn btn-outline">Learn Facts <i class="fas fa-star"></i></a>
+            </div>
+        </div>
+        <div class="stars"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Why Space Matters</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Cosmic Journey</h3>
+                    <p>Space exploration helps us understand our place in the universe, drives technological innovation, and inspires future generations to reach for the stars.</p>
+                    <p>From the first moon landing to Mars rovers, humanity continues to push the boundaries of what's possible.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>195+ Space Missions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>5000+ Exoplanets Discovered</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24 Astronauts in Space</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box" data-count="195">
+                        <h4><span class="counter">0</span>+</h4>
+                        <p>Space Missions</p>
+                    </div>
+                    <div class="stat-box" data-count="5000">
+                        <h4><span class="counter">0</span>+</h4>
+                        <p>Exoplanets</p>
+                    </div>
+                    <div class="stat-box" data-count="24">
+                        <h4><span class="counter">0</span></h4>
+                        <p>Astronauts in Space</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Planets -->
+    <section class="cards-section">
+        <div class="container">
+            <h2 class="section-title">Featured Planets</h2>
+            <p class="section-subtitle">Explore the most fascinating worlds in our solar system</p>
+            <div class="cards-container">
+                <div class="card" data-planet="mars">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA04304/PIA04304~medium.jpg" alt="Mars" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="planet-tag">Red Planet</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mars</h3>
+                        <p>The Red Planet - future destination for human exploration. Home to the largest volcano in the solar system.</p>
+                        <div class="planet-stats">
+                            <span><i class="fas fa-ruler"></i> 6,779 km</span>
+                            <span><i class="fas fa-clock"></i> 24.6h day</span>
+                        </div>
+                        <a href="pages/planets.html#mars" class="btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card" data-planet="jupiter">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA22946/PIA22946~medium.jpg" alt="Jupiter" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="planet-tag">Gas Giant</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jupiter</h3>
+                        <p>The largest planet with 79 moons and the Great Red Spot storm that's raged for centuries.</p>
+                        <div class="planet-stats">
+                            <span><i class="fas fa-ruler"></i> 139,820 km</span>
+                            <span><i class="fas fa-clock"></i> 9.9h day</span>
+                        </div>
+                        <a href="pages/planets.html#jupiter" class="btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card" data-planet="saturn">
+                    <div class="card-image">
+                        <img src="https://images-assets.nasa.gov/image/PIA17172/PIA17172~medium.jpg" alt="Saturn" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="planet-tag">Ringed Beauty</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Saturn</h3>
+                        <p>The ringed beauty - its iconic rings are made of billions of ice and rock particles.</p>
+                        <div class="planet-stats">
+                            <span><i class="fas fa-ruler"></i> 116,460 km</span>
+                            <span><i class="fas fa-clock"></i> 10.7h day</span>
+                        </div>
+                        <a href="pages/planets.html#saturn" class="btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts Table -->
+    <section class="table-section">
+        <div class="container">
+            <h2 class="section-title">Quick Planet Facts</h2>
+            <div class="table-container">
+                <table class="planet-table">
+                    <thead>
+                        <tr>
+                            <th>Planet</th>
+                            <th>Diameter (km)</th>
+                            <th>Distance from Sun</th>
+                            <th>Moons</th>
+                            <th>Day Length</th>
+                            <th>Temperature</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-globe" style="color: #4CAF50;"></i> Earth</td>
+                            <td>12,742</td>
+                            <td>149.6 million km</td>
+                            <td>1</td>
+                            <td>24 hours</td>
+                            <td>15°C</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-globe" style="color: #ff6b6b;"></i> Mars</td>
+                            <td>6,779</td>
+                            <td>227.9 million km</td>
+                            <td>2</td>
+                            <td>24.6 hours</td>
+                            <td>-65°C</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-globe" style="color: #ffd93d;"></i> Jupiter</td>
+                            <td>139,820</td>
+                            <td>778.5 million km</td>
+                            <td>79</td>
+                            <td>9.9 hours</td>
+                            <td>-110°C</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-globe" style="color: #ffb347;"></i> Saturn</td>
+                            <td>116,460</td>
+                            <td>1.4 billion km</td>
+                            <td>82</td>
+                            <td>10.7 hours</td>
+                            <td>-140°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Space News</h2>
+                <p>Subscribe to our newsletter for the latest discoveries and space missions</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AstroExplore</h3>
+                    <p>Your gateway to space exploration and discovery. Join us in exploring the cosmos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="pages/planets.html"><i class="fas fa-chevron-right"></i> Planets</a></li>
+                        <li><a href="pages/facts.html"><i class="fas fa-chevron-right"></i> Facts</a></li>
+                        <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Armstrong Flight Research Center, Washington, D.C</li>
+                        <li><i class="fas fa-phone"></i> +92 314-8768496</li>
+                        <li><i class="fas fa-envelope"></i> info@astroexplore.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2026</span> AstroExplore. All rights reserved. | Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for space lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
